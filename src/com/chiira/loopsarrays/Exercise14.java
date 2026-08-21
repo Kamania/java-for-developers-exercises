@@ -11,19 +11,16 @@ public class Exercise14 {
         Output should be: hello how are you?. Note question mark at the end
     */
         String[] content = {"you", "are", "how", "hello"};
-        StringBuilder word = new StringBuilder();
 
-        for (int i = content.length - 1; i >= 0; i--) {
-            word.append(content[i]);
+        for (int i = content.length - 1; i >= 0 ; i--) {
+            System.out.print(content[i]);
 
             if (i > 0){
-                word.append(" ");
+                System.out.print(" ");
             }
         }
 
-        word.append("?");
-
-        System.out.println(word);
+        System.out.print("?");
 
     }
 }
