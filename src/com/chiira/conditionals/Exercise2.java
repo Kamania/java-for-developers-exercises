@@ -11,7 +11,7 @@ public class Exercise2 {
         String text2 = "Text 1";
 
         // create an `if` statement which compares the two variables and prints to the console if they are equal
-        if (text1 == text2){
+        if (text2.equals(text1)){
             System.out.println("Text 1 and Text 2 are equal");
         }
     }
