@@ -1,7 +1,7 @@
 package com.chiira.conditionals;
 
-public class Exercise5 {
-    // QUESTION 5
+public class Exercise6 {
+    // QUESTION 6
 
     public static void main(String[] args) {
         // create two `int` variables. Assign them values
@@ -12,7 +12,7 @@ public class Exercise5 {
         int val3 = 20;
 
         // create an `if` statement which compares whether the first value is greater than the second AND less than the third
-        if (val1 > val2 && val1 < val3) {
+        if (val1 > val2 || val1 < val3) {
             System.out.println("Val1 is greater than val2 and less than val3");
         }else {
             System.out.println("Val1 is less than val2 and greater than val3");
