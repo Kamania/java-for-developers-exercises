@@ -6,7 +6,7 @@ public class Exercise7 {
         String text = "Amigoscode";
 
         // create an `if` statement which grabs the first letter of your word and compares it against a Character value
-        if (text.charAt(0) == 'A') {
+        if (Character.toLowerCase(text.charAt(0)) == Character.toLowerCase('a')) {
             System.out.println("First letter are a match");
         }else {
             System.out.println("do not match");
