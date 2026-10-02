@@ -8,17 +8,24 @@ public class Exercise2 {
     You might compile and run the program via command line or by editing configuration and pass program arguments
 */
     public static void main(String[] args) {
-        // args should contain numbers
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter an integer: ");
+        if (args.length == 0) {
+            System.out.println("Please provide numbers as program arguments");
+            return;
+        }
 
-        int myValue = scanner.nextInt();
+        for (String arg: args){
+            try {
+                int number = Integer.parseInt(arg);
 
-        if (myValue % 2 == 0) {
-            System.out.println("The value entered is even");
-        }else {
-            System.out.println("The value entered is odd");
+                if (number % 2 == 0){
+                    System.out.println(number + " is even.");
+                }else {
+                    System.out.println(number + " is odd.");
+                }
+            }catch (NumberFormatException e){
+                System.out.println(arg + " is not a valid integer.");
+            }
         }
     }
 
