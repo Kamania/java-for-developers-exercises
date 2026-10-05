@@ -47,5 +47,7 @@ public class Exercise4 {
                 System.out.println("Invalid input. Please enter 'Yes' or 'No'");
             }
         }
+
+        scanner.close();
     }
 }
