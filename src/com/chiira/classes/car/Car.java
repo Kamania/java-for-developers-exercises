@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Car {
     private String manufacturer;
     private double price;
-    private String engine;
+    private EngineType engine;
 
-    public Car(String manufacturer, double price, String engine) {
+    public Car(String manufacturer, double price, EngineType engine) {
         this.manufacturer = manufacturer;
         this.price = price;
         this.engine = engine;
@@ -32,11 +32,11 @@ public class Car {
         this.price = price;
     }
 
-    public String getEngine() {
+    public EngineType getEngine() {
         return engine;
     }
 
-    public void setEngine(String engine) {
+    public void setEngine(EngineType engine) {
         this.engine = engine;
     }
 
